@@ -28,18 +28,32 @@ header {
     margin: 0;
 }
 
+#menu-toggle {
+    display: none;
+}
+
+#burger-icon {
+    font-size: 1.5em;
+    cursor: pointer;
+    display: none;
+}
+
+nav {
+    display: flex;
+    margin: 0px 0px 0px 10px;
+    
+}
+
 nav ul {
+    flex-wrap: wrap;
     list-style-type: none;
     margin: 0;
-    padding: 10;
+    padding: 0;
     display: flex;
-    flex-wrap: wrap;
 }
 
 nav li {
-    display: flex;
     margin-right: 20px;
-    flex-wrap: wrap;
 }
 
 nav a {
@@ -51,6 +65,31 @@ nav a {
 
 nav a:hover {
     color: #ffc107;
+}
+
+@media screen and (max-width: 768px) {
+    #burger-icon {
+        display: block;
+    }
+
+    nav {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+
+    #menu-toggle:checked + #burger-icon + nav {
+        display: flex;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav li {
+        margin: 10px 0;
+    }
 }
 
 footer {
