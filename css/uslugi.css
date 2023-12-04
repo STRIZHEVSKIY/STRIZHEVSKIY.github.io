@@ -1,23 +1,24 @@
 .card {
     display: flex;
-    justify-content: space-around;
+    justify-content:center;
     flex-wrap: wrap;
     flex-direction: initial;
+    margin: 0 0 237px 0;
   }
   
   .wrapper {
     display: flex;
-    height: 420px;
-    width: 654px;
-    margin: 20px auto;
+    height: 210px;
+    width: 327px;
+    margin: 10px;
     border-radius: 7px;
     box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
   }
   
   .product-img {
     display: flex;
-    height: 420px;
-    width: 327px;
+    height: 210px;
+    width: 164px;
   }
   
   .product-img img {
@@ -25,21 +26,21 @@
   }
   
   .product-info {
-    height: 420px;
-    width: 327px;
+    height: 210px;
+    width: 164px;
     border-radius: 0 7px 10px 7px;
     background-color: #ffffff;
   }
   
   .product-text {
-    height: 300px;
-    width: 327px;
+    height: 150px;
+    width: 164px;
   }
   
   .product-text h1 {
-    margin: 0 0 0 38px;
-    padding-top: 52px;
-    font-size: 34px;
+    margin: 0 0 0 18px;
+    padding-top: 26px;
+    font-size: 17px;
     color: #474747;
   }
   
@@ -49,66 +50,66 @@
   }
   
   .product-text h2 {
-    margin: 0 0 47px 38px;
-    font-size: 13px;
+    margin: 0 0 47px 19px;
+    font-size: 7px;
     font-family: 'Raleway', sans-serif;
-    font-weight: 400;
+    font-weight: 200;
     text-transform: uppercase;
     color: #d2d2d2;
     letter-spacing: 0.2em;
   }
   
   .product-text p {
-    height: 125px;
-    margin: 0 0 0 38px;
+    height: 63px;
+    margin: 0 0 0 19px;
     font-family: 'Playfair Display', serif;
     color: #8d8d8d;
     line-height: 1.7em;
-    font-size: 15px;
+    font-size: 8px;
     font-weight: lighter;
     overflow: hidden;
   }
   
   .product-price-btn {
-    height: 103px;
-    width: 327px;
-    margin-top: 17px;
+    height: 52px;
+    width: 164px;
+    margin-top: 9px;
     position: relative;
   }
   
   .product-price-btn p {
     display: inline-block;
     position: absolute;
-    top: -13px;
+    top: 25px;
     height: 50px;
     font-family: 'Trocchi', serif;
     margin: 0 0 0 38px;
-    font-size: 28px;
+    font-size: 14px;
     font-weight: lighter;
     color: #474747;
   }
   
   span {
     display: inline-block;
-    height: 50px;
+    height: 13px;
     font-family: 'Suranna', serif;
-    font-size: 34px;
+    font-size: 17px;
   }
   
   .product-price-btn button {
     float: right;
     display: inline-block;
-    height: 50px;
-    width: 176px;
-    margin: 0 40px 0 16px;
+    height: 25px;
+    width: 80px;
+    margin: 20px 10px 0px 4px;
     box-sizing: border-box;
     border: transparent;
     border-radius: 60px;
     font-family: 'Raleway', sans-serif;
-    font-size: 14px;
-    font-weight: 500;
+    font-size: 8px;
+    font-weight: 125;
     text-transform: uppercase;
-    letter-spacing: 0.2em;
+    letter-spacing: 0.1em;
     color: #ffffff;
     background-color: rgb(78, 78, 78);
     cursor: pointer;
