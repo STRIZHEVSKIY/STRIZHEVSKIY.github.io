@@ -5,6 +5,7 @@
     justify-content: space-between;
     flex-wrap: wrap;
     text-align: center;
+    flex-direction: column;
 }
 
 .info-section h2 {
@@ -17,7 +18,9 @@
     padding-left: 10px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
 }
 
 .info-text {
@@ -41,8 +44,10 @@
 .info-video {
     flex: 1;
     margin-top: 20px;
+    flex-direction: column;
 }
 
 p{
     color: white;
+    text-align: center;
 }
