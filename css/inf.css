@@ -54,21 +54,38 @@ p{
     color: white;
     text-align: center;
 }
+@media screen and (max-width: 767px) {
+    .info-content {
+        padding: 10px;
+    }
 
-@media screen and (max-width: 300px) {
     .info-section {
-        column-count: 1;
+        align-items: center;
     }
-  }
-  
-  @media screen and (min-width: 301px) and (max-width: 700px) {
-    .info-section {
-        column-count: 2;
+
+    .info-text,
+    .info-map,
+    .info-video,
+    .working-hours,
+    .additional-info {
+        width: 100%;
     }
-  }
-  
-  @media screen and (min-width: 701px) and (max-width: 900px) {
-    .info-section {
-        column-count: 3;
+
+    .info-text p {
+        font-size: 1em;
     }
-  }
+
+    .info-map img {
+        margin-top: 10px;
+    }
+
+    .info-video iframe {
+        width: 100%;
+        height: 200px; /* Высоту видео можно настроить по вашему вкусу */
+    }
+
+    .working-hours,
+    .additional-info {
+        margin-top: 20px;
+    }
+}
