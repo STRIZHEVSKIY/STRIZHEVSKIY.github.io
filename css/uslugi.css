@@ -120,20 +120,19 @@
     background-color:  rgb(131, 131, 131);
   }
 
-  @media screen and (max-width: 300px) {
+  @media screen and (max-width: 500px) {
+    .wrapper {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 500px) and (max-width: 991px) {
     .card {
-        column-count: 1;
+        flex-direction: column;
+        align-items: center;
     }
-  }
-  
-  @media screen and (min-width: 301px) and (max-width: 700px) {
-    .card{
-        column-count: 2;
+
+    .wrapper {
+        width: 70%;
     }
-  }
-  
-  @media screen and (min-width: 701px) and (max-width: 900px) {
-    .card {
-        column-count: 3;
-    }
-  }
+}
