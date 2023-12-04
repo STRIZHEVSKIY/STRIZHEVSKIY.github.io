@@ -1,3 +1,5 @@
+
+
 .info-section {
     display: flex;
     justify-content: space-between;
@@ -22,8 +24,11 @@
 }
 
 .info-text {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     flex: 1;
-    text-align: left;
+    text-align: center;
 }
 
 .info-text p {
@@ -50,13 +55,13 @@ p{
     text-align: center;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 300px) {
     .info-section {
         column-count: 1;
     }
   }
   
-  @media screen and (min-width: 501px) and (max-width: 700px) {
+  @media screen and (min-width: 301px) and (max-width: 700px) {
     .info-section {
         column-count: 2;
     }
