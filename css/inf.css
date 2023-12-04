@@ -1,79 +1,83 @@
-
-
 .info-section {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     text-align: center;
     flex-direction: column;
-}
-
-.info-section h2 {
+  }
+  
+  .info-section h2 {
     color: #333;
     font-size: 2em;
     margin-bottom: 20px;
-}
-
-.info-content {
+  }
+  
+  .info-content {
     padding-left: 10px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     text-align: center;
     flex-direction: column;
-}
-
-.info-text {
+  }
+  
+  .info-text {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     flex: 1;
     text-align: center;
-}
-
-.info-text p {
+  }
+  
+  .info-text p {
     font-size: 1.1em;
     line-height: 1.6;
-}
-
-.info-map img {
+  }
+  
+  .info-map img {
     display: flex;
     max-width: 30%;
     height: auto;
     margin-top: 20px;
     border: 1px solid #ddd;
     border-radius: 8px;
-}
-
-.info-video {
+  }
+  
+  .info-video {
     flex: 1;
     margin-top: 20px;
     flex-direction: column;
-}
-
-p{
+  }
+  
+  p {
     color: white;
     text-align: center;
-}
-@media screen and (max-width: 768px) {
+  }
+  
+  @media screen and (max-width: 768px) {
     .info-section h2 {
-        font-size: 1.5em;
+      font-size: 1.5em;
     }
-
     .info-content {
-        padding-left: 0;
+      padding-left: 0;
     }
-
     .info-text p {
-        font-size: 1em;
+      font-size: 1em;
     }
-
     .info-video iframe {
-        height: 150px;
+      width: 100%;
+      height: 200px;
     }
-
     .working-hours,
     .additional-info {
-        margin-top: 10px;
+      margin-top: 10px;
     }
-}
+  }
+  
+  @media screen and (max-width: 500px) {
+    .info-map img {
+      width: 100%;
+      height: auto;
+      max-width: none;
+    }
+  }
