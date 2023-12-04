@@ -2,13 +2,13 @@
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    flex-direction:initial;
 }
 .wrapper {
     height: 420px;
     width: 654px;
     margin: 20px auto;
     border-radius: 7px 7px 7px 7px;
-    /* VIA CSS MATIC https://goo.gl/cIbnS */
     -webkit-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
     -moz-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
     box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
@@ -118,4 +118,22 @@
   
   .product-price-btn button:hover {
     background-color:  rgb(131, 131, 131);
+  }
+
+  @media screen and (max-width: 300px) {
+    .card {
+        column-count: 1;
+    }
+  }
+  
+  @media screen and (min-width: 301px) and (max-width: 700px) {
+    .card{
+        column-count: 2;
+    }
+  }
+  
+  @media screen and (min-width: 701px) and (max-width: 900px) {
+    .card {
+        column-count: 3;
+    }
   }
