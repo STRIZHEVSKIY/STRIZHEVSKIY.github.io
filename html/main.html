@@ -6,7 +6,8 @@
     <link rel="stylesheet" href="/css/styles.css">
     <link rel="stylesheet" href="/css/info.css">
     <link rel="icon" href="/photo/star.png">
-    <title>Автосалон</title>
+    <script src="https://www.google.com/recaptcha/enterprise.js?render=6Lf8CSUpAAAAAHzNpGidw9evCd8-MWIB5Z16g__P"></script>
+    
 </head>
 <body>
 
@@ -26,8 +27,13 @@
             </ul>
         </nav>
     </header>
-
+    
     <main>
+        <form method="post" action="#">
+            <input type="email">
+            <div class="g-recaptcha" data-sitekey="6Lf8CSUpAAAAAHzNpGidw9evCd8-MWIB5Z16g__P"></div>
+            <button type="submit">Отправить</button>
+        </form>
         <section class="hero">
             <h2>Лучшие автомобили для вас</h2>
             <p>Изысканный выбор новых и подержанных автомобилей</p>
@@ -55,22 +61,23 @@
         </section>
     </main>
 
-    <footer>
-        <div class="footer-content">
-            <div class="contact-info">
-                <p>&copy; 2023 Автосалон</p>
-                <p>Адрес: ул. Примерная, 123</p>
-                <p>Телефон: +7 (XXX) XXX-XX-XX</p>
-                <p>Email: info@avtosalon.com</p>
-            </div>
-            <div class="social-buttons">
-                <a href="#" target="_blank"><img src="/photo/Facebook svg.png" alt="Facebook"></a>
-                <a href="#" target="_blank"><img src="/photo/X svg.png" alt="Twitter"></a>
-                <a href="#" target="_blank"><img src="/photo/Vector.png" alt="Instagram"></a>
-            </div>
-        </div>
-    </footer>
+    <div class="login-container">
+        <form id="login-form" onsubmit="return validateCaptcha()">
+            <h2>Вход на сайт</h2>
+            <input type="text" placeholder="Логин" required>
+            <input type="password" placeholder="Пароль" required>
 
-    <script src="script.js"></script>
+            <!-- Контейнер для капчи -->
+            <div class="captcha-container">
+                <img id="captcha-image" alt="Captcha">
+                <button type="button" onclick="generateCaptcha()">Обновить капчу</button>
+                <span id="captcha-result"></span>
+            </div>
+
+            <input type="text" placeholder="Введите текст с картинки" id="captcha-input" required>
+            <button type="submit">Войти</button>
+        </form>
+    </div>
+    <script src="/css/scripts.js"></script>
 </body>
 </html>
